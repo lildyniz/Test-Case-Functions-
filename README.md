@@ -1,5 +1,5 @@
 # 1. Написать функцию, которая принимает на вход список целых чисел и возвращает новый список, содержащий только уникальные элементы из исходного списка.
-
+```
 def unique_elements(input_list):
 
     # Реализация через цикл for:
@@ -16,10 +16,10 @@ def unique_elements(input_list):
 
     # Реализация через преобразование в ключи словаря:
     return list(dict.fromkeys(input_list))
-
+```
 
 # 2. Написать функцию, которая принимает на вход два целых числа (минимум и максимум) и возвращает список всех простых чисел в заданном диапазоне.
-
+```
 def prime_numbers_range(minimum, maximum):
     primes = []
     for num in range(max(2, minimum), maximum + 1):
@@ -31,10 +31,10 @@ def prime_numbers_range(minimum, maximum):
         if is_prime:
             primes.append(num)
     return primes
-
+```
 
 # 3. Создать класс Point, который представляет собой точку в двумерном пространстве. Класс должен иметь методы для инициализации координат точки, вычисления расстояния до другой точки, а также для получения и изменения координат.
-
+```
 class Point:
     def __init__(self, x=0, y=0):
         # Инициализация.
@@ -53,10 +53,10 @@ class Point:
         # Установка новых координат точки.
         self.x = x
         self.y = y
-
+```
 
 # 4. Написать программу, которая сортирует список строк по длине, сначала по возрастанию, а затем по убыванию.
-
+```
 def sort_strings_by_length(strings):
 
     # Сортировка по возрастанию длины строки
@@ -66,3 +66,4 @@ def sort_strings_by_length(strings):
     sorted_strings_desc = sorted(strings, key=len, reverse=True)
 
     return sorted_strings_asc, sorted_strings_desc
+```
